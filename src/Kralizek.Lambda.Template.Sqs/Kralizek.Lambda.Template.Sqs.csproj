@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Kralizek.Lambda.Template.Sqs</PackageId>
+    <PackageTags>aws-lambda-csharp;dotnet-core;aws-lambda;aws;lambda;csharp;sqs</PackageTags>
+    <Description>Extension to Kralizek.Lambda.Template to better support AWS Lambda functions that respond to SQS messages.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kralizek.Lambda.Template\Kralizek.Lambda.Template.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.SQSEvents" Version="[1.1.0,2)" />
+  </ItemGroup>
+
+</Project>
